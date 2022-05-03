@@ -356,6 +356,16 @@ ul li a {
 
 @media screen and (max-width: 768px) {
 
+    #servicios,
+    .padre {
+        text-align: center;
+        background-color: midnightblue;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+
     #nosotros,
     .padre {
         display: block;
@@ -364,13 +374,22 @@ ul li a {
     }
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 1051px) {
 
     #galeria,
     .padre {
-        grid-gap: 0px;
         display: block;
+        text-align: center;
         background-color: midnightblue;
-        padding: 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #contacto,
+    .padre {
+        display: block;
+        text-align: center;
+        background-color: midnightblue;
     }
 }
