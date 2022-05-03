@@ -1,67 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERVICIOS</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SERVICIOS</title>
 </head>
+
 <body>
-  <center>
-    <header>
-       <a href="../index.html"> <img src="../multimedia/capital.jpg" width="100" height="100" alt="logo"> </a>
-        <Nav>
-            <ul class="padre">
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="servicios.html">servicios</a></li>
-                <li><a href="nosotros.html">nosotros</a></li>
-                <li><a href="galeria.html">galeria</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-            </ul>
-        </Nav>
-        <hr>
-        <section>
-            <img src="../multimedia/baner.jpg" width="100%" height="100%" alt="">
-        </section>
-    </header>
-        <hr>
-    <form action="" method="get" enctype="text/plain" >
-     <fieldset>
-       <div> <Legend>Informacion personal</Legend> </div>
-       <hr>
-        <div><label for="userSex">SEXO</label></div>
-        <input type="radio" name="campouserSex" id="userSex">Hombre
-        <input type="radio" name="campouserSex" id="userSex">Mujer
-      <div>
-        <input type="text" name="" id="" placeholder="nombre"> 
-      </div>
-      <div>
-        <input type="text" name="" id="" placeholder="apellido"> 
-      </div>
+  <div id="servicios">
+    <div class="logotipo"><a href="../index.html"> <img src="../multimedia/capital.jpg" width="100" height="100"
+          alt="logo"> </a>
+    </div>
 
-       <div>
-        <label for="talla"></label>
-        <select name="campotallas" id="tallas">
-            <option value="" disabled selected> TALLA</option>
-            <option value="LARGE">L</option>
-            <option value="MEDIUN">M</option>
-            <option value="SMALL">S</option>
-        </select>
-      </div>
-    
-       <input type="submit" value="ENVIAR">
+    <Nav class="menu">
+      <ul class="padre">
+        <li><a href="../index.html">inicio</a></li>
+        <li><a href="servicios.html">servicios</a></li>
+        <li><a href="nosotros.html">nosotros</a></li>
+        <li><a href="galeria.html">galeria</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </Nav>
 
-     </fieldset>
-    </form>
- <footer>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quaerat ipsa! Blanditiis
-           nulla quisquam magni aspernatur, exercitationem alias maiores id ea officiis facilis illo, 
-           in est cumque totam.</p>
-        <p>Maxime, rem necessitatibus. Ipsum exercitationem, eveniet est quidem pariatur adipisci 
-          aliquam dolores voluptatum officiis impedit, deleniti quae numquam quam ipsam assumenda 
-          veritatis eligendi at autem maxime nesciunt facilis.</p>
-        
+    <div class="banerservicios">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../multimedia/baner.jpg" class="d-block w-100" alt="baner1">
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/baner2.jpg" class="d-block w-100" alt="baner2">
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/baner3.jpg" class="d-block w-100" alt="baner3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <ul class="lista1">
+      <h1>ofrecemos los siguientes servicio</h1>
+      <li>Instructor físico de planta (Gimnasio, piscina )</li>
+      <li>Clases grupales de rumba, autocarga para adulto mayor, actividades recreo-deportivas para niños, yoga</li>
+      <li>Servicios personalizados de fullbody, entrenamiento funcional, y diversas disciplinas deportivas (fútbol,
+        patinaje,natación)</li>
+      <li>Asesoría y mantenimientos</li>
+      <li>Supervisión y evaluación</li>
+    </ul>
+
+    <table class="t1" border="10" cellspacing="5px" cellpadding="5px">
+      <tr>
+        <th>OFERTA 1</th>
+      </tr>
+      <tr>
+        <td>Instructor Gym 8 horas de martes a domingo</td>
+      </tr>
+      <tr>
+        <td>Piscina, savavidas 8 horas de martes a domingo</td>
+      </tr>
+      <tr>
+        <td>Clases de rumba 4 al mes</td>
+      </tr>
+      <tr>
+        <td>Clases recreo deportivas niños 4 al mes</td>
+      </tr>
+      <tr>
+        <td>Clases de auto carga para adulto mayor 4 al mes</td>
+      </tr>
+      <tr>
+        <td>Una hora diaria de instructor de Squash</td>
+      </tr>
+      <tr>
+        <td>Dos Clases de Yoga al mes</td>
+      </tr>
+      <tr>
+        <td>Coordinación general y compra de químicos de piscina</td>
+      </tr>
+    </table>
+
+    <table class="t2" border="10" cellspacing="5px" cellpadding="5px">
+      <tr>
+        <th>OFERTA 2</th>
+      </tr>
+      <tr>
+        <td>Instructor Gym 8 horas de martes a domingo</td>
+      </tr>
+      <tr>
+        <td>savavidas 8 horas sábados y domingos y 3 horas de martes a viernes</td>
+      </tr>
+      <tr>
+        <td>Clases de rumba 4 al mes</td>
+      </tr>
+      <tr>
+        <td>Clases recreo deportivas niños 4 al mes</td>
+      </tr>
+      <tr>
+        <td>Clases de auto carga para adulto mayor 4 al mes</td>
+      </tr>
+      <tr>
+        <td>Una hora diaria de instructor de Squash</td>
+      </tr>
+      <tr>
+        <td>Coordinación general y compra de químicos de piscina</td>
+      </tr>
+    </table>
+
+    <table class="t3" border="10" cellspacing="5px" cellpadding="5px">
+      <tr>
+        <th>OFERTA 3</th>
+      </tr>
+      <tr>
+        <td>Instructor Gym 8 horas de martes a domingo</td>
+      </tr>
+      <tr>
+        <td>Piscina, savavidas 8 horas los días viernes, sábados y domingos</td>
+      </tr>
+      <tr>
+        <td>Clases de rumba 4 al mes</td>
+      </tr>
+      <tr>
+        <td>Clases recreo deportivas niños 4 al mes</td>
+      </tr>
+      <tr>
+        <td>Clases de auto carga para adulto mayor 4 al mes</td>
+      </tr>
+      <tr>
+        <td>Una hora diaria de instructor de Squash</td>
+      </tr>
+      <tr>
+        <td>Coordinación general y compra de químicos de piscina</td>
+      </tr>
+    </table>
+    <div class="ofertas">
+      <label for="talla"></label>
+      <select name="campotallas" id="tallas">
+          <option value="" disabled selected> SELECCINE UNA OFERTA</option>
+          <option value="LARGE">OFERTA 1</option>
+          <option value="MEDIUN">OFERTA 2</option>
+          <option value="SMALL">OFERTA 3</option>
+      </select>
+  </div>
+    <footer class="footers">
+      <p>Con estos servicios, no solo podrán aprovechar de manera eficiente los espacios con que dispone su conjunto
+        residencial,
+        sino que además los residentes estarán más complacidos y saludables, generando una mayor aprobación de su
+        administración.</p>
     </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
